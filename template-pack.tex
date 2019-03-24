@@ -1,0 +1,9 @@
+\documentclass{article}
+\usepackage[english]{babel}%
+\usepackage[a4paper]{geometry}% http://ctan.org/pkg/geometry
+\usepackage{pdfpages}% http://ctan.org/pkg/pdfpages
+\begin{document}
+    \BLOCK{ for name, _ in ballot_list }
+        \includepdf[pages=-]{ballot-\VAR{name}}
+    \BLOCK{ endfor }
+\end{document}

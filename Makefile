@@ -3,13 +3,19 @@ CONFIG=example.yml
 PAPERS_TEX=$(shell $(PYEXE) list $(CONFIG) tex)
 PAPERS_PDF=$(shell $(PYEXE) list $(CONFIG) pdf)
 
-all: $(PAPERS_PDF)
+all: $(PAPERS_PDF) ballot-pack.pdf ballot-print.pdf
+
+ballot-print.pdf: template-print.tex ballot-pack.pdf
+	xelatex template-print.tex
 
 %.pdf: %.tex
 	xelatex $<
 
 $(PAPERS_TEX): $(CONFIG)
 	$(PYEXE) tex $(CONFIG)
+
+ballot-pack.tex:
+	$(PYEXE) texpack $(CONFIG)
 
 .PHONY: clean view
 
