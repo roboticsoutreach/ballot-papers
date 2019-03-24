@@ -22,7 +22,7 @@ This will create a pdf for every ballot paper, a merged version and a version wi
 
 ## Configuration
 
-In order to configure what data to put on the ballot papers, you should use a YAML file. There is an example of the format in `example.yml`.
+In order to configure what data to put on the ballot papers, you should use a YAML file called `candidates.yml`. There is an example of the format in `candidates.example.yml`.
 
 
 ## Notes

@@ -1,5 +1,5 @@
 PYEXE=pipenv run ballot
-CONFIG=example.yml
+CONFIG=candidates.yml
 PAPERS_TEX=$(shell $(PYEXE) list $(CONFIG) tex)
 PAPERS_PDF=$(shell $(PYEXE) list $(CONFIG) pdf)
 
