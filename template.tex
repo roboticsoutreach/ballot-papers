@@ -8,11 +8,11 @@
 
 \begin{document}
     \begin{center}
-        \Huge{SRO AGM}
-        \LARGE{2019-03-25}
+        \Huge{\VAR{org}}
+        \LARGE{\VAR{date}}
 
 
-        \Large{\textbf{President}}
+        \Large{\textbf{\VAR{title}}}
     \end{center}
 
     Mark the candidates numerically in order of preference. 
@@ -22,8 +22,8 @@
     Rank as many candidates as you wish.
 
     \begin{itemize}
-        \option Alice Andrews
-        \option Bob Bobbins
-        \option Re-open Nominations
+        \BLOCK{ for candidate in candidate_list }
+            \option \VAR{ candidate }
+        \BLOCK{ endfor }
     \end{itemize}
 \end{document}
