@@ -67,10 +67,10 @@
         },
         "ruamel-yaml": {
             "hashes": [
-                "sha256:3aa5573a986ab6627c37e2c79befeff2e6eb7bcf780a49250b4fb19142309ecd"
+                "sha256:0db639b1b2742dae666c6fc009b8d1931ef15c9276ef31c0673cc6dcf766cf40"
             ],
             "index": "pypi",
-            "version": "==0.16.4"
+            "version": "==0.16.5"
         },
         "ruamel.yaml.clib": {
             "hashes": [
