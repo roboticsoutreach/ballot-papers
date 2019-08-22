@@ -7,6 +7,7 @@ all: $(PAPERS_PDF) ballot-pack.pdf ballot-print.pdf
 
 ballot-print.pdf: template-print.tex ballot-pack.pdf
 	xelatex template-print.tex
+	mv template-print.pdf ballot-print.pdf
 
 %.pdf: %.tex
 	xelatex $<

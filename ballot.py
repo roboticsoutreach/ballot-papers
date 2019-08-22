@@ -53,7 +53,8 @@ def tex(config_file: io.BufferedReader):
     for name, paper in config["papers"].items():
         candidates: List[str] = paper["candidates"]
         sorted(candidates)
-        candidates.append("Re-open Nominations")
+        if config["config"]["ron"]:
+            candidates.append("Re-open Nominations")
         generate_ballot_tex(
             name, config["config"]["org"], paper["title"], paper["date"], candidates
         )

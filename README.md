@@ -16,7 +16,10 @@ Requirements:
   - Jinja2
   - Click
 
-Generation: `make`
+- Install python requirements using pipenv - `pipenv sync`
+- Go into the venv - `pipenv shell`
+- Edit configuration
+- Generate papers: `make`
 
 This will create a pdf for every ballot paper, a merged version and a version with each ballot paper at A6 size on an A4 page ready for printing.
 
